@@ -18,7 +18,7 @@ import {
   ShieldCheck,
   FileText,
 } from "lucide-react";
-import { LinkedinIcon, GithubIcon, FiverrIcon } from "@/components/SocialIcons";
+import { LinkedinIcon, GithubIcon } from "@/components/SocialIcons";
 import { CONTACT_INFO, getBasePath } from "@/config/portfolio";
 
 const rotatingRoles = [
@@ -233,16 +233,6 @@ export default function HeroSection() {
                 aria-label="LinkedIn Profile"
               >
                 <LinkedinIcon className="w-4 h-4" />
-              </a>
-              <a
-                href={CONTACT_INFO.fiverrUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-zinc-300 hover:text-emerald-400 hover:border-emerald-500/50 hover:bg-emerald-500/10 transition-all duration-200"
-                aria-label="Fiverr Freelance Profile"
-                title="Fiverr Freelance Profile"
-              >
-                <FiverrIcon className="w-4 h-4" />
               </a>
               <a
                 href={`mailto:${CONTACT_INFO.email}`}

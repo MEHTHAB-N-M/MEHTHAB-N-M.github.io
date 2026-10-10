@@ -4,12 +4,8 @@ import { motion } from "framer-motion";
 import {
   Globe,
   Layers,
-  Cpu,
-  Bot,
   BarChart3,
   Wrench,
-  Video,
-  FileText,
   CheckCircle2,
   ArrowRight,
   Sparkles,
@@ -19,6 +15,7 @@ import {
   ShieldCheck,
   LucideIcon,
 } from "lucide-react";
+
 /**
  * FREELANCE SERVICES & PRICING CONFIG
  * ====================================
@@ -35,7 +32,7 @@ export const SERVICES_PRICE_DISCLAIMER = PRICING_NOTES.timeline;
 export interface ServiceItem {
   id: string;
   title: string;
-  iconName: "Globe" | "Layers" | "BarChart3" | "Wrench" | "Video" | "FileText";
+  iconName: "Globe" | "Layers" | "Wrench" | "BarChart3";
   startingPrice: string; // Starting prices in USD ($)
   description: string;
   deliverables: [string, string, string];
@@ -44,92 +41,64 @@ export interface ServiceItem {
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
-    id: "business-websites",
+    id: "business-portfolio-websites",
     title: "Business & Portfolio Websites",
     iconName: "Globe",
     startingPrice: "$49",
-    description: "Custom design, mobile-friendly, SEO basics and deployment.",
+    description: "Fast, responsive websites for businesses, creators, and personal brands.",
     deliverables: [
-      "Custom responsive design tailored to your brand",
-      "Mobile-friendly layout with fast loading speed",
-      "SEO basics setup and deployment on Vercel/Netlify",
+      "Responsive design with React/Next.js, HTML, CSS, Tailwind or Bootstrap",
+      "Clean, mobile-friendly UI with SEO basics",
+      "Deployment on Vercel, Netlify, or GitHub Pages",
     ],
     projectType: "Business/Portfolio Website",
   },
   {
     id: "fullstack-web-apps",
-    title: "Full-Stack Web Apps (Django/FastAPI + React)",
+    title: "Full-Stack Web Apps",
     iconName: "Layers",
     startingPrice: "$199",
-    description: "Auth and user roles, database design, admin dashboard.",
+    description: "Complete web applications from database to user interface.",
     deliverables: [
-      "Secure authentication, JWT & granular user roles (RBAC)",
-      "Robust PostgreSQL/MySQL database schema design",
-      "Interactive React/Next.js UI & custom admin dashboard",
+      "React/Next.js frontend with Django, Flask, or Node.js backend",
+      "Authentication, user roles, and admin dashboard",
+      "PostgreSQL, MySQL, or MongoDB, plus third-party API and AI chatbot integration",
     ],
     projectType: "Full-Stack Web App",
+  },
+  {
+    id: "bug-fixes-deployment-cicd",
+    title: "Bug Fixes, Deployment & CI/CD",
+    iconName: "Wrench",
+    startingPrice: "$25",
+    description: "Fix, improve, and ship your existing project.",
+    deliverables: [
+      "Debugging and code cleanup",
+      "Deployment on Render, Vercel, or GitHub Pages",
+      "CI/CD pipeline setup with GitHub Actions",
+    ],
+    projectType: "Bug Fixes & Deployment",
   },
   {
     id: "data-analysis-dashboards",
     title: "Data Analysis & Dashboards",
     iconName: "BarChart3",
     startingPrice: "$79",
-    description: "Data cleaning with Pandas, ML models, Tableau/web dashboards.",
+    description: "Turn raw data into clear insights.",
     deliverables: [
-      "Data wrangling, cleaning & exploratory analysis with Pandas/NumPy",
-      "Predictive machine learning models (Scikit-Learn classification/regression)",
-      "Interactive data visualizations in Tableau or bespoke web dashboards",
+      "Data cleaning with Pandas and NumPy",
+      "Machine learning models with Scikit-Learn",
+      "Tableau or web dashboards",
     ],
     projectType: "Data Analysis & Dashboards",
-  },
-  {
-    id: "bug-fixes-deployment",
-    title: "Bug Fixes & Deployment",
-    iconName: "Wrench",
-    startingPrice: "$25",
-    description: "Debugging, Docker setup, Render/Netlify deployment.",
-    deliverables: [
-      "Deep root-cause debugging & error fixes in Python/JavaScript",
-      "Docker containerization (Dockerfile & docker-compose)",
-      "Production deployment configuration on Render, Netlify, or Vercel",
-    ],
-    projectType: "Bug Fixes & Deployment",
-  },
-  {
-    id: "video-editing",
-    title: "Video Editing",
-    iconName: "Video",
-    startingPrice: "$19",
-    description: "Professional cuts, color grading, sound design & social media reels.",
-    deliverables: [
-      "Dynamic cuts, pacing, smooth transitions & motion graphics",
-      "Color grading, audio balancing, sound effects & subtitles",
-      "High-resolution exports optimized for YouTube, Reels & Shorts",
-    ],
-    projectType: "Video Editing",
-  },
-  {
-    id: "resume-making",
-    title: "Resume Making",
-    iconName: "FileText",
-    startingPrice: "$12",
-    description: "ATS-optimized resumes, modern clean designs & tailored cover letters.",
-    deliverables: [
-      "ATS-friendly formatting, keyword optimization & layout",
-      "Impactful bullet points highlighting achievements & skills",
-      "Print-ready PDF with editable source file (Docs / Word)",
-    ],
-    projectType: "Resume Making",
   },
 ];
 
 const iconMap: Record<ServiceItem["iconName"], LucideIcon> = {
   Globe,
   Layers,
-  BarChart3,
   Wrench,
-  Video,
-  FileText,
+  BarChart3,
 };
 
 const workSteps = [
@@ -208,12 +177,12 @@ export default function ServicesSection() {
             transition={{ delay: 0.2 }}
             className="text-zinc-400 text-base sm:text-lg leading-relaxed"
           >
-            From custom business websites and full-stack web applications to video editing, data dashboards, and cloud deployments.
+            From custom business websites and full-stack web applications to bug fixes, data dashboards, and cloud deployments.
           </motion.p>
         </div>
 
-        {/* 6 Services Responsive Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch mb-20">
+        {/* 4 Services Responsive 2x2 Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 md:auto-rows-fr gap-6 items-stretch mb-20">
           {SERVICES_DATA.map((service, idx) => {
             const IconComponent = iconMap[service.iconName] || Globe;
 
@@ -229,7 +198,7 @@ export default function ServicesSection() {
                 {/* Subtle Hover Ambient Glow */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-indigo-500/20 transition-all pointer-events-none" />
 
-                <div>
+                <div className="flex flex-col flex-1">
                   {/* Top Bar: Icon & Starting Price */}
                   <div className="flex items-center justify-between gap-3 mb-5">
                     <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-cyan-400 group-hover:text-white group-hover:bg-gradient-to-tr group-hover:from-indigo-600 group-hover:to-cyan-500 group-hover:border-transparent transition-all duration-300 shadow-md">
@@ -255,7 +224,7 @@ export default function ServicesSection() {
                   </p>
 
                   {/* Deliverables List */}
-                  <div className="space-y-2.5 mb-6 pt-4 border-t border-white/10">
+                  <div className="space-y-2.5 mb-6 pt-4 border-t border-white/10 flex-1">
                     <span className="block text-[11px] font-bold text-zinc-400 uppercase tracking-wider mb-2">
                       Key Deliverables
                     </span>

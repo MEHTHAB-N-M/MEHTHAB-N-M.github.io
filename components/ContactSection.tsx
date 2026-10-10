@@ -14,17 +14,15 @@ import {
   Phone,
   ExternalLink,
 } from "lucide-react";
-import { LinkedinIcon, GithubIcon, FiverrIcon, WhatsAppIcon } from "@/components/SocialIcons";
+import { LinkedinIcon, GithubIcon, WhatsAppIcon } from "@/components/SocialIcons";
 import { CONTACT_INFO } from "@/config/portfolio";
 
 const PROJECT_TYPE_OPTIONS = [
-  "Full-Time / Developer Role",
   "Business/Portfolio Website",
   "Full-Stack Web App",
-  "Video Editing",
-  "Resume Making",
-  "Data Analysis & Dashboards",
   "Bug Fixes & Deployment",
+  "Data Analysis & Dashboards",
+  "Full-Time / Developer Role",
   "Other",
 ];
 
@@ -37,7 +35,7 @@ export default function ContactSection() {
     name: "",
     email: "",
     subject: "",
-    projectType: "Full-Time / Developer Role",
+    projectType: "Business/Portfolio Website",
     message: "",
   });
 
@@ -305,12 +303,12 @@ Message: ${formData.message || "I would like to discuss a project."}`;
               <div className="w-3 h-3 rounded-full bg-cyan-400 animate-pulse shadow-lg shadow-cyan-400/50" />
             </div>
 
-            {/* Social Channels & Freelance Platforms */}
+            {/* Social Channels */}
             <div className="rounded-3xl glass-card p-5 sm:p-6 border border-white/10 space-y-3">
               <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-wider">
-                Connect &amp; Hire Channels
+                Connect Channels
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 <a
                   href={CONTACT_INFO.githubUrl}
                   target="_blank"
@@ -335,20 +333,6 @@ Message: ${formData.message || "I would like to discuss a project."}`;
                     <span className="text-xs font-semibold text-zinc-200">LinkedIn</span>
                   </div>
                   <ArrowUpRight className="w-3.5 h-3.5 text-zinc-500 group-hover:text-cyan-400" />
-                </a>
-
-                <a
-                  href={CONTACT_INFO.fiverrUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-3 rounded-2xl bg-white/5 border border-white/10 hover:border-emerald-500/40 hover:bg-white/10 transition-all group"
-                  title="Fiverr Freelance Services"
-                >
-                  <div className="flex items-center gap-2">
-                    <FiverrIcon className="w-4 h-4 text-emerald-400" />
-                    <span className="text-xs font-semibold text-zinc-200">Fiverr</span>
-                  </div>
-                  <ArrowUpRight className="w-3.5 h-3.5 text-zinc-500 group-hover:text-emerald-400" />
                 </a>
               </div>
             </div>

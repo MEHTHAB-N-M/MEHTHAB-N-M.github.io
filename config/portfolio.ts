@@ -40,9 +40,6 @@ export const CONTACT_INFO = {
   githubUrl: "https://github.com/MEHTHAB7",
   linkedinUrl: "https://www.linkedin.com/in/mehthab-n-m-637611344",
 
-  // Freelance Profiles
-  fiverrUrl: "https://www.fiverr.com/mehthabnm",
-
   // WhatsApp link with pre-filled message
   whatsappUrl:
     "https://wa.me/919526256761?text=Hi%20Mehthab%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project.",
