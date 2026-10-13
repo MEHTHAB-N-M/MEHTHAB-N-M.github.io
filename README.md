@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Mehthab N M: Developer Portfolio
 
-## Getting Started
+> My personal portfolio showcasing projects, skills, experience, and freelance services.
 
-First, run the development server:
+🔗 **Live Deployment:** [mehthab-n-m.github.io/My_portfolio](https://mehthab-n-m.github.io/My_portfolio/)
+
+---
+
+## 📸 Portfolio Preview
+
+<p align="center">
+  <img src="public/screenshots/hero.png" alt="Mehthab N M Portfolio Hero Preview" width="100%" />
+</p>
+
+### 🖼️ Sections Gallery
+
+| 🚀 Featured Projects & Production Builds | ⚡ Technical Skills & AI Matrix |
+|:---:|:---:|
+| <img src="public/screenshots/projects.png" alt="Featured Projects" width="100%" /> | <img src="public/screenshots/skills.png" alt="Skills Matrix" width="100%" /> |
+
+| 💼 Freelance Services & Offerings | 📬 Interactive Contact Section |
+|:---:|:---:|
+| <img src="public/screenshots/services.png" alt="Services Packages" width="100%" /> | <img src="public/screenshots/contact.png" alt="Contact Form" width="100%" /> |
+
+---
+
+## ✨ Sections
+
+- **About:** Introduction, background, and core engineering philosophy.
+- **Skills:** Filterable tech stack across programming languages, web frameworks, databases, and development tools.
+- **Services:** Freelance client offerings (websites, full-stack web applications, cloud deployment, and data dashboards).
+- **Projects:** Flagship production builds, systems architectures, live demos, and open-source repositories.
+- **Experience & Education:** Full-stack development training, team leadership, and academic degree milestones.
+- **Certifications:** Data science credentials, HackerRank certifications, and Google Developer badges.
+- **Contact:** Interactive contact and inquiry form with direct email and WhatsApp communication channels.
+
+---
+
+## 🧱 Tech Stack
+
+- **Framework:** Next.js (React)
+- **Styling:** Vanilla CSS & Tailwind CSS
+- **Animation:** Framer Motion
+- **Deployment:** GitHub Pages (Automated CI/CD via GitHub Actions)
+
+---
+
+## ⚙️ Run Locally
+
+Clone the repository and start the development server:
 
 ```bash
+git clone https://github.com/MEHTHAB-N-M/My_portfolio.git
+cd My_portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Build
 
-## Learn More
+To create an optimized production static export:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The static site bundle will be output to the `./out` directory.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📬 Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 📧 **Email:** [mehthabnm7@gmail.com](mailto:mehthabnm7@gmail.com)
+- 💼 **LinkedIn:** [Mehthab N M](https://www.linkedin.com/in/mehthab-n-m-637611344)
+- 🐙 **GitHub:** [@MEHTHAB-N-M](https://github.com/MEHTHAB-N-M)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+© 2026 Mehthab N M. All rights reserved.
