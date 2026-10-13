@@ -102,7 +102,8 @@ My_portfolio/
 ├── public/
 │   ├── og-image.png            # OpenGraph preview banner
 │   ├── profile.jpeg            # Professional headshot portrait
-│   ├── resume.pdf              # Downloadable resume document
+│   ├── mehthab_n_m.pdf         # Official downloadable resume PDF
+│   ├── resume.pdf              # Resume alias/fallback PDF
 │   └── screenshots/            # HD interface preview screenshots
 ├── next.config.ts              # Static export & base-path configuration
 └── package.json                # Project dependencies & scripts

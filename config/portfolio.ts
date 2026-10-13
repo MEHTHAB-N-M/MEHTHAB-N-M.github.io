@@ -45,7 +45,7 @@ export const CONTACT_INFO = {
     "https://wa.me/919526256761?text=Hi%20Mehthab%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project.",
 
   // Resume file location in /public directory
-  resumePath: "/resume.pdf",
+  resumePath: "/mehthab_n_m.pdf",
 
   // Timezone and international business hours overlap
   timezone: "IST (UTC +05:30) • Flexible overlap with US, UK & Gulf business hours",
