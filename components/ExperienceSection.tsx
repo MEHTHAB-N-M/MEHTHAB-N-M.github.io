@@ -38,10 +38,11 @@ const timelineData: TimelineItem[] = [
     awardBadge: "🤖 Advanced Full-Stack & AI",
     scorePill: "In Progress",
     bullets: [
-      "Undergoing intensive, hands-on professional training in Python full-stack development, building applications with Django, React, and AI integration.",
+      "Undergoing intensive, hands-on professional training in Python full-stack development, building scalable web applications with Django 5, PostgreSQL, React, and applied AI under trainer Liyat Ps.",
+      "Engineered RaktaGrid (Emergency Blood Dispatch Framework), eliminating double-booking via PostgreSQL row-level locks (select_for_update), 2-hour reservation locks, and Haversine geospatial failover routing.",
       "Developing scalable REST APIs, relational database schemas, and integrating generative AI features and automated workflows into web architectures.",
     ],
-    skills: ["Python", "Django", "React.js", "AI Integration", "Prompt Engineering", "REST APIs", "SQL"],
+    skills: ["Python", "Django 5", "PostgreSQL", "Concurrency Locks", "React.js", "AI Integration", "REST APIs", "Render"],
   },
   {
     id: "logix-space",

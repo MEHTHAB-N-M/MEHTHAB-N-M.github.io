@@ -21,9 +21,9 @@ export const getBasePath = (): string => {
 export const SITE_CONFIG = {
   name: "Mehthab N M",
   role: "Software Engineer • Full-Stack & Python Developer",
-  url: "https://mehthab7.github.io/My_portfolio/",
+  url: "https://mehthab-n-m.github.io/My_portfolio/",
   ogImage: "/og-image.png",
-  canonicalUrl: "https://mehthab7.github.io/My_portfolio/",
+  canonicalUrl: "https://mehthab-n-m.github.io/My_portfolio/",
 };
 
 /**
@@ -37,7 +37,7 @@ export const CONTACT_INFO = {
   location: "Kochi, Kerala, India",
 
   // GitHub & LinkedIn
-  githubUrl: "https://github.com/MEHTHAB7",
+  githubUrl: "https://github.com/MEHTHAB-N-M",
   linkedinUrl: "https://www.linkedin.com/in/mehthab-n-m-637611344",
 
   // WhatsApp link with pre-filled message

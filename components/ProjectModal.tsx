@@ -39,6 +39,7 @@ export interface ProjectItem {
   isFlagship?: boolean;
   status?: "completed" | "ongoing";
   hackathonNote?: string;
+  contextNote?: string;
   mediaPlaceholder?: ProjectMediaPlaceholder;
 }
 
@@ -119,11 +120,11 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             {project.title}
           </h2>
 
-          {/* Hackathon lineage note if present */}
-          {project.hackathonNote && (
+          {/* Institutional / Mentorship / Hackathon lineage note if present */}
+          {(project.contextNote || project.hackathonNote) && (
             <div className="mb-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-medium">
               <Users className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-              <span>{project.hackathonNote}</span>
+              <span>{project.contextNote || project.hackathonNote}</span>
             </div>
           )}
 
@@ -254,7 +255,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-white/10">
             <div className="flex flex-wrap items-center gap-3">
               <a
-                href={project.githubUrl || "https://github.com/MEHTHAB7"}
+                href={project.githubUrl || "https://github.com/MEHTHAB-N-M"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 border border-white/15 hover:bg-white/10 text-white text-xs sm:text-sm font-semibold transition-colors"

@@ -21,11 +21,12 @@ import {
   Image as ImageIcon,
   Clock,
   CheckCircle2,
+  Activity,
 } from "lucide-react";
 import ProjectModal, { ProjectItem } from "./ProjectModal";
 import { GithubIcon } from "@/components/SocialIcons";
 
-// 5 Featured Projects in strict order requested
+// 6 Featured Projects in strict order requested
 const featuredProjectsData: ProjectItem[] = [
   {
     id: "campyteq",
@@ -59,7 +60,7 @@ const featuredProjectsData: ProjectItem[] = [
       "Campus fast-print kiosk queue with instant cost estimation and 4-digit PIN verification",
       "Edge Computer Vision RTSP camera ingestion prototype for student zone presence detection",
     ],
-    githubUrl: "https://github.com/MEHTHAB7/CampyTeq",
+    githubUrl: "https://github.com/MEHTHAB-N-M/CampyTeq",
     mediaPlaceholder: {
       type: "gallery",
       label: "Screenshot Gallery Placeholder",
@@ -67,6 +68,44 @@ const featuredProjectsData: ProjectItem[] = [
       screenshots: [],
       note: "Drop your CampyTeq dashboard screenshots in public/ and specify their paths in mediaPlaceholder.screenshots.",
     },
+  },
+  {
+    id: "raktagrid",
+    title: "RaktaGrid – Emergency Blood Dispatch Framework",
+    category: "Healthcare Logistics & Concurrency Engine",
+    badge: "PRODUCTION LIVE • DJANGO 5",
+    isFlagship: true,
+    status: "completed",
+    period: "Completed • Production Live on Render",
+    roleOrTeam: "Lead Backend & Full-Stack Architect",
+    contextNote: "Camerin Institute • Mentored by Liyat Ps",
+    description:
+      "Production-grade municipal emergency blood dispatch framework engineered with PostgreSQL row-level locks, 3-tier geospatial failover routing, and clinical cold-chain verification to eliminate double-allocation.",
+    fullOverview:
+      "RaktaGrid is an emergency blood dispatch framework engineered around real-world municipal healthcare logistics and strict cold-chain protocols. Built during Python full-stack Django training at Camerin – Indian Institute of Upskill under the mentorship of trainer Liyat Ps, it solves the critical system-design challenge of coordinating scarce life-saving blood units across multi-hospital networks in real time without race conditions or double-booking.\n\nPowered by Django 5 and PostgreSQL on Neon Cloud with connection pooling, the framework uses select_for_update(skip_locked=True) inside atomic transactions to eliminate deadlocks, grants 2-hour reservation locks with automated lapse for unissued bags, and implements a 3-tier dispatch waterfall combining ABO/Rh compatibility, Haversine geospatial proximity routing, and donor outreach while strictly preserving clinical cooldowns and donor privacy via HMAC-SHA256.",
+    tech: [
+      "Python 3",
+      "Django 5",
+      "PostgreSQL (Neon)",
+      "Concurrency Locks",
+      "Haversine Routing",
+      "HMAC-SHA256",
+      "Gunicorn",
+      "WhiteNoise",
+      "Render",
+    ],
+    keyHighlights: [
+      "PostgreSQL row-level locking via select_for_update(skip_locked=True) inside atomic transactions to eliminate double-booking",
+      "2-hour auto-lapsing reservation lock engine preventing inventory deadlocks on unissued units",
+      "3-tier dispatch waterfall: local ABO/Rh matching, regional Haversine proximity failover, and voluntary donor cascade (50 km radius)",
+      "Universal O-negative unit preservation algorithm reserving universal stock for life-threatening mismatch cases",
+      "Clinical 90-day whole-blood biological recovery cooldown enforced via custom database managers",
+      "HMAC-SHA256 civic donor anonymization protecting donor identities while maintaining auditable validation",
+      "End-to-end chain of custody with quarantine disease screening sign-offs and tamper-evident dispatch manifests",
+      "Production live on Render with Neon Cloud PostgreSQL connection pooling and WhiteNoise static asset delivery",
+    ],
+    githubUrl: "https://github.com/MEHTHAB-N-M/RaktaGrid",
+    liveUrl: "https://raktagrid.onrender.com/",
   },
   {
     id: "quicktask",
@@ -101,8 +140,8 @@ const featuredProjectsData: ProjectItem[] = [
       "Daily attendance check-in/out engine tracking active hours and validating continuity",
       "Automated vector PDF executive summaries and productivity reports compiled via ReportLab",
     ],
-    githubUrl: "https://github.com/MEHTHAB7/QUICK_TASK",
-    liveUrl: "https://mehthab7.github.io/QUICK_TASK/login",
+    githubUrl: "https://github.com/MEHTHAB-N-M/QUICK_TASK",
+    liveUrl: "https://mehthab-n-m.github.io/QUICK_TASK/login",
   },
   {
     id: "zynkarashift",
@@ -132,7 +171,7 @@ const featuredProjectsData: ProjectItem[] = [
       "Custom multi-tenancy routing engine with automated reverse proxy & domain mapping",
       "Container lifecycle orchestration and automated environment isolation",
     ],
-    githubUrl: "https://github.com/MEHTHAB7/Zynkara_Shift",
+    githubUrl: "https://github.com/MEHTHAB-N-M/Zynkara_Shift",
     mediaPlaceholder: {
       type: "video",
       label: "Video Demo / Screenshot Placeholder",
@@ -161,7 +200,7 @@ const featuredProjectsData: ProjectItem[] = [
       "Built responsive Python/Flask REST application interfacing with MongoDB",
       "Deployed live on Render with active transaction risk scoring endpoints",
     ],
-    githubUrl: "https://github.com/MEHTHAB7/credit_card_fraud_detection",
+    githubUrl: "https://github.com/MEHTHAB-N-M/credit_card_fraud_detection",
     liveUrl: "https://credit-card-fraud-detection-1-41ac.onrender.com/",
   },
   {
@@ -183,7 +222,7 @@ const featuredProjectsData: ProjectItem[] = [
       "Bespoke dark glassmorphism layout tailored for high-end aesthetic",
       "Production deployed on Netlify with automated CI/CD and mobile optimization",
     ],
-    githubUrl: "https://github.com/MEHTHAB7/Web-Page-App",
+    githubUrl: "https://github.com/MEHTHAB-N-M/Web-Page-App",
     liveUrl: "https://noorjahan-interior-designer.netlify.app/",
   },
 ];
@@ -209,7 +248,7 @@ const additionalProjectsData: ProjectItem[] = [
       "Local multi-player game session state persistent store",
       "Deployed live on Tiiny for instant browser and mobile device testing",
     ],
-    githubUrl: "https://github.com/MEHTHAB7/Tic_Tac_Toe",
+    githubUrl: "https://github.com/MEHTHAB-N-M/Tic_Tac_Toe",
     liveUrl: "https://tictac2oe.tiiny.site/",
   },
   {
@@ -231,7 +270,7 @@ const additionalProjectsData: ProjectItem[] = [
       "Custom layout animations with Framer Motion",
       "100/100 Lighthouse performance and SEO score",
     ],
-    githubUrl: "https://github.com/MEHTHAB7/wedding_company",
+    githubUrl: "https://github.com/MEHTHAB-N-M/wedding_company",
   },
   {
     id: "zynkaraauth",
@@ -252,7 +291,7 @@ const additionalProjectsData: ProjectItem[] = [
       "High-speed Redis cache for token revocation lists",
       "Role-Based Access Control (RBAC) middleware",
     ],
-    githubUrl: "https://github.com/MEHTHAB7/SecureAuth",
+    githubUrl: "https://github.com/MEHTHAB-N-M/SecureAuth",
   },
   {
     id: "ocean-voyage",
@@ -273,7 +312,7 @@ const additionalProjectsData: ProjectItem[] = [
       "Developed under strict 24-hour hackathon constraints",
       "High-praise UI & data presentation from industry judges",
     ],
-    githubUrl: "https://github.com/MEHTHAB7/cruise_booking",
+    githubUrl: "https://github.com/MEHTHAB-N-M/cruise_booking",
   },
 ];
 
@@ -282,6 +321,7 @@ export default function ProjectsSection() {
   const [activeModalProject, setActiveModalProject] = useState<ProjectItem | null>(null);
 
   const getProjectIcon = (category: string) => {
+    if (category.includes("Healthcare") || category.includes("Dispatch") || category.includes("Blood")) return Activity;
     if (category.includes("PaaS")) return Sparkles;
     if (category.includes("Authentication")) return Shield;
     if (category.includes("Client")) return HeartHandshake;
@@ -357,11 +397,11 @@ export default function ProjectsSection() {
             <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-cyan-400 shrink-0 mt-0.5" />
           </div>
 
-          {/* Hackathon lineage notice for QuickTask */}
-          {project.hackathonNote && (
+          {/* Institutional / Mentorship / Hackathon lineage notice */}
+          {(project.contextNote || project.hackathonNote) && (
             <div className="mb-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-[11px] font-medium">
               <Users className="w-3 h-3 text-cyan-400 shrink-0" />
-              <span>{project.hackathonNote}</span>
+              <span>{project.contextNote || project.hackathonNote}</span>
             </div>
           )}
 
@@ -420,7 +460,7 @@ export default function ProjectsSection() {
               )}
 
               <a
-                href={project.githubUrl || "https://github.com/MEHTHAB7"}
+                href={project.githubUrl || "https://github.com/MEHTHAB-N-M"}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
@@ -472,11 +512,11 @@ export default function ProjectsSection() {
             transition={{ delay: 0.2 }}
             className="text-zinc-400 text-base sm:text-lg leading-relaxed"
           >
-            A curated selection of 5 key flagship systems spanning multi-college enterprise SaaS, AI-driven productivity platforms, cloud PaaS, machine learning, and bespoke client applications.
+            A curated selection of 6 flagship systems spanning emergency healthcare logistics, enterprise multi-tenant SaaS, AI-driven platforms, cloud PaaS, machine learning, and bespoke client applications.
           </motion.p>
         </div>
 
-        {/* 5 Featured Projects Grid */}
+        {/* 6 Featured Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch mb-10">
           {featuredProjectsData.map((project, idx) => renderProjectCard(project, idx))}
         </div>

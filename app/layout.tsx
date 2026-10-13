@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mehthab7.github.io/My_portfolio/"),
+  metadataBase: new URL("https://mehthab-n-m.github.io/My_portfolio/"),
   title: "Mehthab N M | Software Engineer • Full-Stack & Python Developer",
   description:
     "Versatile Software Engineer and Full-Stack Developer with hands-on experience building scalable web applications, robust Python backends, freelance client solutions, and data & AI systems.",
@@ -36,19 +36,19 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Mehthab N M" }],
   alternates: {
-    canonical: "https://mehthab7.github.io/My_portfolio/",
+    canonical: "https://mehthab-n-m.github.io/My_portfolio/",
   },
   openGraph: {
     title: "Mehthab N M | Software Engineer • Full-Stack & Python Developer",
     description:
       "Full-stack web applications, robust Python backends, freelance client solutions, and applied AI systems.",
-    url: "https://mehthab7.github.io/My_portfolio/",
+    url: "https://mehthab-n-m.github.io/My_portfolio/",
     siteName: "Mehthab N M Portfolio",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://mehthab7.github.io/My_portfolio/og-image.png",
+        url: "https://mehthab-n-m.github.io/My_portfolio/og-image.png",
         width: 1200,
         height: 630,
         alt: "Mehthab N M | Software Engineer & Freelance Developer",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "Mehthab N M | Software Engineer • Full-Stack & Python Developer",
     description:
       "Full-stack web applications, robust Python backends, freelance client solutions, and applied AI systems.",
-    images: ["https://mehthab7.github.io/My_portfolio/og-image.png"],
+    images: ["https://mehthab-n-m.github.io/My_portfolio/og-image.png"],
   },
 };
 
