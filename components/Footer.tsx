@@ -48,7 +48,7 @@ export default function Footer() {
             <div>
               <span className="font-extrabold tracking-wider text-base">MEHTHAB N M</span>
               <p className="text-zinc-500 text-xs">
-                Software Engineer • Full-Stack Developer &amp; Freelance Solutions
+                Software Engineer • Full-Stack &amp; Python Developer
               </p>
             </div>
           </div>

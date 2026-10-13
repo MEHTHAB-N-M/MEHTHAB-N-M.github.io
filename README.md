@@ -87,7 +87,6 @@ My_portfolio/
 │   ├── Navbar.tsx              # Dynamic blur navigation & mobile drawer
 │   ├── HeroSection.tsx         # Headline, bio stats & CTA actions
 │   ├── SkillsSection.tsx       # Searchable & filterable skill badges
-│   ├── ServicesSection.tsx     # Client service offerings & pricing
 │   ├── ProjectsSection.tsx     # Flagship systems cards & repo links
 │   ├── ProjectModal.tsx        # In-depth architectural case studies modal
 │   ├── ExperienceSection.tsx   # Professional training & team leadership

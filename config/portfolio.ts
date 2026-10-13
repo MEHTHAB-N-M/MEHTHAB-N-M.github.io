@@ -52,18 +52,6 @@ export const CONTACT_INFO = {
 };
 
 /**
- * FREELANCE SERVICES & PRICING
- * ============================
- * Defined in one single place at the top of components/ServicesSection.tsx
- */
-export {
-  SERVICES_DATA,
-  SERVICES_PRICE_DISCLAIMER,
-  PRICING_NOTES,
-  type ServiceItem,
-} from "@/components/ServicesSection";
-
-/**
  * CLIENT TESTIMONIALS
  * ===================
  * Edit testimonials here. If you clear this array (i.e. set to []),
