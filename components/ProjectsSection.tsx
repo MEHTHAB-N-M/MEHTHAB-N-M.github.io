@@ -269,8 +269,10 @@ const additionalProjectsData: ProjectItem[] = [
       "Interactive event booking & inquiry calendar pipeline",
       "Custom layout animations with Framer Motion",
       "100/100 Lighthouse performance and SEO score",
+      "Deployed live on Render for client evaluation and interactive demo",
     ],
     githubUrl: "https://github.com/MEHTHAB-N-M/wedding_company",
+    liveUrl: "https://wedding-company-2-49p1.onrender.com/",
   },
   {
     id: "zynkaraauth",
