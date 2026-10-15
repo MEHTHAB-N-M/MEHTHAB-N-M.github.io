@@ -119,7 +119,6 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
       "AI Copilot",
     ],
     githubUrl: "https://github.com/MEHTHAB-N-M/Zynkara_Shift",
-    liveUrl: "https://github.com/MEHTHAB-N-M/Zynkara_Shift",
   },
 
   quicktask: {

@@ -24,8 +24,6 @@ const rotatingRoles = [
   "Full-Stack Developer",
   "Python Developer",
   "Software Developer",
-  "Data Analyst",
-  "AI & ML Engineer",
 ];
 
 export default function HeroSection() {
