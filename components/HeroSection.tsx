@@ -118,7 +118,7 @@ export default function HeroSection() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                <span>Available for full-time engineering roles</span>
+                <span>Open to full-time roles</span>
               </div>
 
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-zinc-400 text-xs font-medium backdrop-blur-md">
@@ -156,7 +156,7 @@ export default function HeroSection() {
               </div>
             </motion.div>
 
-            {/* Bio Subtitle fitting all roles: Full-Stack, Python, Software Engineer, Data Analyst & AI */}
+            {/* Bio Subtitle */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -166,7 +166,7 @@ export default function HeroSection() {
               Versatile Software Engineer with hands-on experience building scalable{" "}
               <span className="text-white font-semibold">Full-Stack applications</span>, robust{" "}
               <span className="text-white font-semibold">Python backends</span>, and{" "}
-              <span className="text-white font-semibold">Data & AI systems</span>. Skilled in designing clean APIs, optimizing database architectures, deriving actionable insights from complex datasets, and leading engineering teams from design through production deployment. I also partner with clients to build and deploy high-performance custom web applications.
+              <span className="text-white font-semibold">Data & AI systems</span>. Skilled in designing clean APIs, optimizing database architectures, deriving actionable insights from complex datasets, and leading engineering teams from design through production deployment.
             </motion.p>
 
             {/* Action Buttons & Socials */}
@@ -176,13 +176,13 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2"
             >
-              {/* Primary: Hire Me */}
+              {/* Primary: Contact Me */}
               <a
                 href="#contact"
                 className="group relative inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 text-white font-semibold text-sm shadow-xl shadow-indigo-600/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
               >
                 <Sparkles className="w-4 h-4 text-cyan-200" />
-                <span>Hire Me</span>
+                <span>Contact Me</span>
               </a>
 
               {/* Secondary: View Projects */}

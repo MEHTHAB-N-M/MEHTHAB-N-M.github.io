@@ -129,7 +129,7 @@ export default function Navbar() {
               className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 rounded-full shadow-lg shadow-indigo-500/25 transition-all duration-200 hover:scale-105 active:scale-95"
             >
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Hire Me</span>
+              <span>Contact Me</span>
             </a>
           </div>
 
@@ -214,7 +214,7 @@ export default function Navbar() {
                     onClick={() => setMobileMenuOpen(false)}
                     className="px-4 py-2 text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-indigo-600 to-cyan-600 rounded-full shadow-lg shadow-indigo-500/25"
                   >
-                    Hire Me
+                    Contact Me
                   </a>
                 </div>
               </div>

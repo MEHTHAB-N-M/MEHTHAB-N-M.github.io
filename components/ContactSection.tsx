@@ -17,15 +17,6 @@ import {
 import { LinkedinIcon, GithubIcon, WhatsAppIcon } from "@/components/SocialIcons";
 import { CONTACT_INFO } from "@/config/portfolio";
 
-const PROJECT_TYPE_OPTIONS = [
-  "Business/Portfolio Website",
-  "Full-Stack Web App",
-  "Bug Fixes & Deployment",
-  "Data Analysis & Dashboards",
-  "Full-Time / Developer Role",
-  "Other",
-];
-
 export default function ContactSection() {
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [copiedPhone, setCopiedPhone] = useState(false);
@@ -35,7 +26,6 @@ export default function ContactSection() {
     name: "",
     email: "",
     subject: "",
-    projectType: "Business/Portfolio Website",
     message: "",
   });
 
@@ -46,21 +36,6 @@ export default function ContactSection() {
     email?: string;
     message?: string;
   }>({});
-
-  // Listen for 'select-project-type' events triggered by "Get a Quote" buttons in ServicesSection
-  useEffect(() => {
-    const handleSelectProjectType = (e: Event) => {
-      const customEvent = e as CustomEvent<string>;
-      if (customEvent.detail) {
-        setFormData((prev) => ({ ...prev, projectType: customEvent.detail }));
-      }
-    };
-
-    window.addEventListener("select-project-type", handleSelectProjectType);
-    return () => {
-      window.removeEventListener("select-project-type", handleSelectProjectType);
-    };
-  }, []);
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(CONTACT_INFO.email);
@@ -96,13 +71,13 @@ export default function ContactSection() {
   const buildMailtoUrl = () => {
     const subjectLine =
       formData.subject.trim() ||
-      `Portfolio Inquiry: ${formData.projectType} from ${formData.name}`;
+      `Portfolio Inquiry from ${formData.name}`;
 
     const bodyContent = `Hi Mehthab,
 
 Name: ${formData.name}
 Email: ${formData.email}
-Project / Inquiry Type: ${formData.projectType}
+Subject: ${formData.subject || "General Inquiry"}
 
 Message:
 ${formData.message}
@@ -115,15 +90,15 @@ ${formData.message}
 
   const buildWhatsAppUrl = () => {
     const text = `Hi Mehthab, I saw your portfolio.
-My Name: ${formData.name || "Client"}
-Project Type: ${formData.projectType}
-Message: ${formData.message || "I would like to discuss a project."}`;
+Name: ${formData.name || "Recruiter / Hiring Manager"}
+Subject: ${formData.subject || "Opportunity"}
+Message: ${formData.message || "I would like to discuss an opportunity."}`;
 
     return `https://wa.me/${CONTACT_INFO.phoneRaw}?text=${encodeURIComponent(text)}`;
   };
 
   const handleCopyFullMessage = () => {
-    const fullText = `Name: ${formData.name}\nEmail: ${formData.email}\nProject Type: ${formData.projectType}\nMessage:\n${formData.message}`;
+    const fullText = `Name: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject || "Inquiry"}\nMessage:\n${formData.message}`;
     navigator.clipboard.writeText(fullText);
     setCopiedMessage(true);
     setTimeout(() => setCopiedMessage(false), 2500);
@@ -178,7 +153,7 @@ Message: ${formData.message || "I would like to discuss a project."}`;
             transition={{ delay: 0.2 }}
             className="text-zinc-400 text-base sm:text-lg leading-relaxed"
           >
-            Whether you are looking to hire for a full-time engineering role, need a custom web application built, or have an API/AI project — I am ready to collaborate.
+            Currently open to full-time Software Engineer, Python Developer, and Full-Stack roles. Let&apos;s connect to discuss engineering opportunities, team fit, and technical challenges.
           </motion.p>
         </div>
 
@@ -244,7 +219,7 @@ Message: ${formData.message || "I would like to discuss a project."}`;
               </div>
 
               <h3 className="text-white font-bold text-base mb-0.5">Direct Phone &amp; WhatsApp</h3>
-              <p className="text-zinc-400 text-xs mb-3">Available for urgent project queries</p>
+              <p className="text-zinc-400 text-xs mb-3">Available for interview calls</p>
 
               <div className="flex items-center justify-between gap-2 p-2.5 rounded-2xl bg-white/5 border border-white/10 group-hover:border-emerald-500/40 transition-colors">
                 <a
@@ -409,9 +384,9 @@ Message: ${formData.message || "I would like to discuss a project."}`;
                 <form onSubmit={handleSubmit} className="space-y-5" noValidate>
                   <div className="flex items-center justify-between pb-4 border-b border-white/10">
                     <div>
-                      <h3 className="text-white font-bold text-xl">Send an Inquiry</h3>
+                      <h3 className="text-white font-bold text-xl">Send a Message</h3>
                       <p className="text-zinc-400 text-xs">
-                        Available for full-time engineering roles &amp; technical inquiries
+                        Recruiters and hiring managers welcome
                       </p>
                     </div>
                     <MessageSquare className="w-5 h-5 text-indigo-400" />
@@ -476,41 +451,20 @@ Message: ${formData.message || "I would like to discuss a project."}`;
                     </div>
                   </div>
 
-                  {/* Project Type Selector & Subject */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1.5">
-                        Inquiry / Project Type
-                      </label>
-                      <select
-                        value={formData.projectType}
-                        onChange={(e) =>
-                          setFormData({ ...formData, projectType: e.target.value })
-                        }
-                        className="w-full px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 text-sm text-zinc-100 focus:outline-none focus:border-indigo-500 transition-colors"
-                      >
-                        {PROJECT_TYPE_OPTIONS.map((opt) => (
-                          <option key={opt} value={opt}>
-                            {opt}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1.5">
-                        Subject
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="Project or Role Discussion"
-                        value={formData.subject}
-                        onChange={(e) =>
-                          setFormData({ ...formData, subject: e.target.value })
-                        }
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-indigo-500 transition-colors"
-                      />
-                    </div>
+                  {/* Subject Input */}
+                  <div>
+                    <label className="block text-xs font-semibold uppercase tracking-wider text-zinc-300 mb-1.5">
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="e.g. Software Engineer Opportunity / Role Discussion"
+                      value={formData.subject}
+                      onChange={(e) =>
+                        setFormData({ ...formData, subject: e.target.value })
+                      }
+                      className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-indigo-500 transition-colors"
+                    />
                   </div>
 
                   {/* Message Area */}
@@ -521,7 +475,7 @@ Message: ${formData.message || "I would like to discuss a project."}`;
                     <textarea
                       required
                       rows={4}
-                      placeholder="Hi Mehthab, I would like to discuss a project / full-time role regarding..."
+                      placeholder="Hi Mehthab, I would like to discuss an opportunity / full-time role regarding..."
                       value={formData.message}
                       onChange={(e) => {
                         setFormData({ ...formData, message: e.target.value });
@@ -552,7 +506,7 @@ Message: ${formData.message || "I would like to discuss a project."}`;
                     className="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 disabled:opacity-60 text-white font-bold text-sm tracking-wider uppercase shadow-xl shadow-indigo-600/25 transition-all duration-200 hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2"
                   >
                     <Send className="w-4 h-4" />
-                    <span>{isSubmitting ? "Opening Mail..." : "Send Inquiry"}</span>
+                    <span>{isSubmitting ? "Opening Mail..." : "Send Message"}</span>
                   </button>
                 </form>
               )}

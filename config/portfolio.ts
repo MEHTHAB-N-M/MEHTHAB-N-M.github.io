@@ -66,14 +66,5 @@ export interface TestimonialItem {
   rating?: number;
 }
 
-export const TESTIMONIALS_DATA: TestimonialItem[] = [
-  {
-    id: "testimonial-1",
-    name: "Noorjahan N K",
-    role: "Interior Designer",
-    company: "Noorjahan Interior Design",
-    quote:
-      "Mehthab designed and delivered a beautiful, modern portfolio website for my interior design work. The project showcase, smooth animations, and mobile experience were executed perfectly. Highly recommended!",
-    rating: 5,
-  },
-];
+export const TESTIMONIALS_DATA: TestimonialItem[] = [];
+

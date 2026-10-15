@@ -5,7 +5,6 @@ import ProjectsSection from "@/components/ProjectsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import EducationSection from "@/components/EducationSection";
 import CertificationsSection from "@/components/CertificationsSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -20,7 +19,6 @@ export default function Home() {
       <ExperienceSection />
       <EducationSection />
       <CertificationsSection />
-      <TestimonialsSection />
       <ContactSection />
       <Footer />
       <FloatingWhatsApp />
