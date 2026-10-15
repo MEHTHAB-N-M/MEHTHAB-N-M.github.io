@@ -31,16 +31,16 @@ export interface ProjectItem {
  */
 export const FEATURED_PROJECT_IDS: string[] = [
   "raktagrid",
-  "zynkarashift",
   "quicktask",
+  "zynkarashift",
+  "noorjahan",
+  "credsecure",
   "oceanvoyage",
-  "campyteq",
-  "zynkaraauth",
 ];
 
 export const ADDITIONAL_PROJECT_IDS: string[] = [
-  "credsecure",
-  "noorjahan",
+  "campyteq",
+  "zynkaraauth",
   "wedding-platform",
   "tictactoe-mobile",
 ];

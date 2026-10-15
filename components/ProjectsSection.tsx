@@ -275,7 +275,7 @@ export default function ProjectsSection() {
             transition={{ delay: 0.2 }}
             className="text-zinc-400 text-base sm:text-lg leading-relaxed"
           >
-            A curated selection of 6 flagship systems spanning emergency healthcare logistics, cloud PaaS, AI productivity platforms, maritime logistics, and enterprise multi-tenant ecosystems.
+            A curated selection of 6 flagship projects spanning emergency healthcare logistics, AI productivity platforms, cloud PaaS, interior architecture, machine learning fraud detection, and maritime booking systems.
           </motion.p>
         </div>
 
