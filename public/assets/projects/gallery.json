@@ -1,0 +1,202 @@
+{
+  "zynkarashift": [
+    {
+      "src": "/assets/projects/zynkarashift/zynkarashift-01.webp",
+      "caption": "Self-hosted PaaS dashboard with live service telemetry"
+    },
+    {
+      "src": "/assets/projects/zynkarashift/zynkarashift-02.webp",
+      "caption": "One-click deployment modal from GitHub repos and Docker images"
+    },
+    {
+      "src": "/assets/projects/zynkarashift/zynkarashift-03.webp",
+      "caption": "Container lifecycle orchestration and resource monitoring"
+    },
+    {
+      "src": "/assets/projects/zynkarashift/zynkarashift-04.webp",
+      "caption": "AI deployment copilot diagnosing build failures from live logs"
+    },
+    {
+      "src": "/assets/projects/zynkarashift/zynkarashift-05.webp",
+      "caption": "Platform architecture overview and reverse proxy routing"
+    }
+  ],
+  "raktagrid": [
+    {
+      "src": "/assets/projects/raktagrid/raktagrid-01.webp",
+      "caption": "Zero-login public blood search with real-time stock availability"
+    },
+    {
+      "src": "/assets/projects/raktagrid/raktagrid-02.webp",
+      "caption": "Hospital emergency operations command center and inventory ledger"
+    },
+    {
+      "src": "/assets/projects/raktagrid/raktagrid-03.webp",
+      "caption": "Three-tier allocation dispatch queue with concurrency locks"
+    },
+    {
+      "src": "/assets/projects/raktagrid/raktagrid-04.webp",
+      "caption": "Tamper-evident cold-chain dispatch manifest verification"
+    },
+    {
+      "src": "/assets/projects/raktagrid/raktagrid-05.webp",
+      "caption": "HMAC-SHA256 anonymized civic donor registry with 90-day cooldown"
+    }
+  ],
+  "quicktask": [
+    {
+      "src": "/assets/projects/quicktask/quicktask-01.webp",
+      "caption": "Interactive Kanban task board with priority workflow and deadlines"
+    },
+    {
+      "src": "/assets/projects/quicktask/quicktask-02.webp",
+      "caption": "Scikit-Learn AI predictive productivity scoring and efficiency radar"
+    },
+    {
+      "src": "/assets/projects/quicktask/quicktask-03.webp",
+      "caption": "Administrator command center with productivity telemetry"
+    },
+    {
+      "src": "/assets/projects/quicktask/quicktask-04.webp",
+      "caption": "Daily employee attendance tracking and active work hours"
+    },
+    {
+      "src": "/assets/projects/quicktask/quicktask-05.webp",
+      "caption": "Real-time duplex WebSocket team messaging channel"
+    },
+    {
+      "src": "/assets/projects/quicktask/quicktask-06.webp",
+      "caption": "Employee portal workspace and personal task trajectory"
+    },
+    {
+      "src": "/assets/projects/quicktask/quicktask-07.webp",
+      "caption": "Enterprise workspace authentication and sign-in portal"
+    }
+  ],
+  "oceanvoyage": [
+    {
+      "src": "/assets/projects/oceanvoyage/oceanvoyage-01.webp",
+      "caption": "Cruise booking exploration portal and voyage itinerary"
+    },
+    {
+      "src": "/assets/projects/oceanvoyage/oceanvoyage-02.webp",
+      "caption": "Interactive stateroom and cabin reservation with deck availability"
+    },
+    {
+      "src": "/assets/projects/oceanvoyage/oceanvoyage-03.webp",
+      "caption": "Real-time activity conflict warning for overlapping events"
+    },
+    {
+      "src": "/assets/projects/oceanvoyage/oceanvoyage-04.webp",
+      "caption": "Maritime operations management console and passenger manifests"
+    }
+  ],
+  "campyteq": [
+    {
+      "src": "/assets/projects/campyteq/campyteq-01.webp",
+      "caption": "Executive dashboard with real-time institutional telemetry"
+    },
+    {
+      "src": "/assets/projects/campyteq/campyteq-02.webp",
+      "caption": "Institutional login portal with 12 granular RBAC roles"
+    },
+    {
+      "src": "/assets/projects/campyteq/campyteq-03.webp",
+      "caption": "Explainable AI academic risk early warning radar"
+    },
+    {
+      "src": "/assets/projects/campyteq/campyteq-04.webp",
+      "caption": "Statutory 75% attendance defaulters tracking engine"
+    },
+    {
+      "src": "/assets/projects/campyteq/campyteq-05.webp",
+      "caption": "Edge Computer Vision zone presence telemetry"
+    },
+    {
+      "src": "/assets/projects/campyteq/campyteq-06.webp",
+      "caption": "Multi-college fee collection ledger and invoicing"
+    },
+    {
+      "src": "/assets/projects/campyteq/campyteq-07.webp",
+      "caption": "Campus fast-print kiosk queue with 4-digit PIN verification"
+    },
+    {
+      "src": "/assets/projects/campyteq/campyteq-08.webp",
+      "caption": "Student academic hub and course progression portal"
+    },
+    {
+      "src": "/assets/projects/campyteq/campyteq-09.webp",
+      "caption": "Faculty mentor portal and biometric timesheet logging"
+    }
+  ],
+  "zynkaraauth": [
+    {
+      "src": "/assets/projects/zynkaraauth/zynkaraauth-01.webp",
+      "caption": "ZynkaraAuth centralized identity engine landing page"
+    },
+    {
+      "src": "/assets/projects/zynkaraauth/zynkaraauth-02.webp",
+      "caption": "Developer console with OAuth clients and RBAC permissions"
+    },
+    {
+      "src": "/assets/projects/zynkaraauth/zynkaraauth-03.webp",
+      "caption": "Secure authentication portal with single sign-on"
+    },
+    {
+      "src": "/assets/projects/zynkaraauth/zynkaraauth-04.webp",
+      "caption": "Time-based one-time password (TOTP) MFA verification"
+    },
+    {
+      "src": "/assets/projects/zynkaraauth/zynkaraauth-05.webp",
+      "caption": "Multi-tenant developer registration and organization setup"
+    },
+    {
+      "src": "/assets/projects/zynkaraauth/zynkaraauth-06.webp",
+      "caption": "Interactive OpenAPI/Swagger documentation and webhook endpoints"
+    }
+  ],
+  "credsecure": [
+    {
+      "src": "/assets/projects/credsecure/credsecure-01.webp",
+      "caption": "Real-time fraud prediction result with risk scoring metrics"
+    },
+    {
+      "src": "/assets/projects/credsecure/credsecure-02.webp",
+      "caption": "Secure authentication portal for transaction analysts"
+    }
+  ],
+  "noorjahan": [
+    {
+      "src": "/assets/projects/noorjahan/noorjahan-01.webp",
+      "caption": "Interior design architectural showcase and spatial overview"
+    },
+    {
+      "src": "/assets/projects/noorjahan/noorjahan-02.webp",
+      "caption": "Design philosophy, spatial expertise, and project concepts"
+    }
+  ],
+  "wedding-platform": [
+    {
+      "src": "/assets/projects/wedding-platform/wedding-platform-01.webp",
+      "caption": "Wedding event company homepage and featured celebrations"
+    },
+    {
+      "src": "/assets/projects/wedding-platform/wedding-platform-02.webp",
+      "caption": "High-resolution media showcase and event photography gallery"
+    },
+    {
+      "src": "/assets/projects/wedding-platform/wedding-platform-03.webp",
+      "caption": "Event package configurator and premium services"
+    },
+    {
+      "src": "/assets/projects/wedding-platform/wedding-platform-04.webp",
+      "caption": "Interactive client inquiry and booking pipeline"
+    }
+  ],
+  "tictactoe-mobile": [
+    {
+      "src": "/assets/projects/tictactoe-mobile/tictactoe-mobile-01.webp",
+      "caption": "Interactive AI game board with Minimax algorithm"
+    }
+  ]
+}
