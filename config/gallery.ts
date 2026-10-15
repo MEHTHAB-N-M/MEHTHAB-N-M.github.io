@@ -51,4 +51,13 @@ export function getProjectThumbnail(slug: string): GalleryImage | null {
   return images.length > 0 ? images[0] : null;
 }
 
+/**
+ * Returns the dedicated 16:9 thumbnail/cover illustration for a project card (distinct from screenshots).
+ */
+export function getProjectCardCover(slug: string): string {
+  if (!slug) return "";
+  const normalizedSlug = slug.toLowerCase().replace(/[^a-z0-9-]/g, "");
+  return resolveAssetUrl(`/assets/covers/${normalizedSlug}.webp`);
+}
+
 export default galleryData;

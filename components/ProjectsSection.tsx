@@ -29,7 +29,7 @@ import {
   getFeaturedProjects,
   getAdditionalProjects,
 } from "@/config/projectsData";
-import { getProjectThumbnail } from "@/config/gallery";
+import { getProjectCardCover } from "@/config/gallery";
 
 export default function ProjectsSection() {
   const [showMoreProjects, setShowMoreProjects] = useState(false);
@@ -93,7 +93,7 @@ export default function ProjectsSection() {
 
   const renderProjectCard = (project: ProjectItem, idx: number) => {
     const IconComp = getProjectIcon(project.category);
-    const thumbnail = getProjectThumbnail(project.id);
+    const cardThumbnail = getProjectCardCover(project.id);
 
     return (
       <motion.div
@@ -111,13 +111,13 @@ export default function ProjectsSection() {
         <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl group-hover:bg-indigo-500/20 transition-all pointer-events-none" />
 
         <div className="flex flex-col">
-          {/* 16:9 Thumbnail Image */}
+          {/* 16:9 Dedicated Project Thumbnail (Distinct from gallery screenshots) */}
           <div className="relative w-full aspect-video rounded-2xl overflow-hidden mb-4 bg-zinc-900 border border-white/10 group-hover:border-indigo-500/30 transition-all">
-            {thumbnail ? (
+            {cardThumbnail ? (
               /* eslint-disable-next-line @next/next/no-img-element */
               <img
-                src={thumbnail.src}
-                alt={`${project.title} interface preview thumbnail`}
+                src={cardThumbnail}
+                alt={`${project.title} project thumbnail`}
                 width={640}
                 height={360}
                 loading="lazy"
@@ -133,7 +133,7 @@ export default function ProjectsSection() {
             {/* Fallback Placeholder (when image is missing or errors) */}
             <div
               className={`fallback-card ${
-                thumbnail ? "hidden" : "flex"
+                cardThumbnail ? "hidden" : "flex"
               } absolute inset-0 w-full h-full items-center justify-center bg-zinc-900 text-zinc-400 p-4 text-center`}
             >
               <div className="flex flex-col items-center gap-1.5">

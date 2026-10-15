@@ -45,6 +45,22 @@ const timelineData: TimelineItem[] = [
     skills: ["Python", "Django 5", "PostgreSQL", "Concurrency Locks", "React.js", "AI Integration", "REST APIs", "Render"],
   },
   {
+    id: "oceanvoyage-hackathon",
+    role: "Backend & Database Developer • OceanVoyage",
+    organization: "Technopark × ICT Academy of Kerala × Royal Caribbean Group",
+    period: "National Hackathon",
+    location: "Technopark, Kerala",
+    type: "work",
+    awardBadge: "🚢 Hackathon Finalist",
+    scorePill: "24h Hackathon",
+    bullets: [
+      "Architected the PostgreSQL relational database schema and developed NestJS backend APIs for OceanVoyage under 24-hour national hackathon constraints.",
+      "Engineered the real-time activity conflict detection engine to eliminate overlapping passenger bookings across onshore excursions and onboard events.",
+      "Collaborated in a 3-member squad with Aswin Suresh (Security) and Durga Sunil (Frontend) to deliver an end-to-end maritime booking platform.",
+    ],
+    skills: ["NestJS", "PostgreSQL", "Database Architecture", "Backend Engineering", "Conflict Detection Algorithm", "REST APIs", "Team Collaboration"],
+  },
+  {
     id: "logix-space",
     role: "Full Stack Trainee Developer",
     organization: "Logix Space Technologies Pvt. Ltd. (LinkUrCodes)",
