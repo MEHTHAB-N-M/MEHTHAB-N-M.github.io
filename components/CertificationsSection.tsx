@@ -37,7 +37,7 @@ const certificationsList: CertificationItem[] = [
     scoreOrTier: "Score 30/30 (400 Hours)",
     description: [
       "Completed an intensive 400-hour specialized curriculum covering data wrangling, statistical exploratory data analysis, and predictive modeling.",
-      "Achieved a flawless distinction score of 30/30 across hands-on laboratory assessments and data engineering projects.",
+      "Achieved a distinction score of 30/30 across hands-on laboratory assessments and data engineering projects.",
       "Constructed machine learning classification models with Python (Pandas, NumPy, Scikit-Learn) and dynamic analytical dashboards in Tableau.",
     ],
     skills: ["Data Science", "Analytics", "Pandas", "NumPy", "Scikit-Learn", "Tableau", "Machine Learning", "EDA"],
@@ -51,8 +51,8 @@ const certificationsList: CertificationItem[] = [
     scoreOrTier: "Certificates of Accomplishment",
     credentialId: "CDA7C4373E05",
     description: [
-      "Rigorously evaluated and certified for production-grade React.js architecture, component lifecycle management, and high-performance state handling.",
-      "Demonstrated advanced proficiency in algorithmic problem solving, asynchronous JavaScript, and data structures.",
+      "Evaluated and certified for modern React.js architecture, component lifecycle management, and clean state handling.",
+      "Demonstrated proficiency in algorithmic problem solving, asynchronous JavaScript, and data structures.",
     ],
     skills: ["React.js", "Software Engineering", "JavaScript (ES6+)", "State Management", "Component Architecture"],
   },

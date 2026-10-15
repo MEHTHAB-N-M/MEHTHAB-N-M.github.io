@@ -57,7 +57,7 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
     roleOrTeam: "Lead Backend & Full-Stack Architect",
     contextNote: "Camerin Institute • Mentored by Liyat Ps",
     description:
-      "Production-grade municipal emergency blood dispatch framework engineered with PostgreSQL row-level locks, 3-tier geospatial failover routing, and clinical cold-chain verification to eliminate double-allocation.",
+      "Municipal emergency blood dispatch framework engineered with PostgreSQL row-level locks, 3-tier geospatial failover routing, and clinical cold-chain verification to eliminate double-allocation.",
     hook: "5 threads, 1 unit, exactly 1 reservation.",
     problemSolution: [
       "Trauma emergencies across multi-hospital networks are vulnerable to critical race conditions and inventory double-booking when allocating scarce life-saving blood units.",
@@ -208,8 +208,8 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
     period: "Ongoing • In Active Development",
     roleOrTeam: "Lead System Architect & Full-Stack Developer",
     description:
-      "Enterprise-grade higher education digital operating system uniting administrative governance, dual attendance, fee invoicing, biometric timesheets, and campus automation across 12 institutional roles.",
-    hook: "Enterprise multi-tenant SaaS uniting 12 institutional roles with strict row-level isolation.",
+      "Enterprise higher education digital operating system uniting administrative governance, dual attendance, fee invoicing, biometric timesheets, and campus automation across 10 institutional roles.",
+    hook: "Enterprise multi-tenant SaaS uniting 10 institutional roles with strict row-level isolation.",
     problemSolution: [
       "Colleges and universities rely on disjointed legacy software for admissions, fees, attendance, and campus safety, causing operational overhead.",
       "CampyTeq delivers an enterprise digital operating system with strict multi-tenant row-level database isolation bound to college UUIDs.",
@@ -217,7 +217,7 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
     ],
     keyFeatures: [
       "Strict multi-tenant row-level database isolation with verified X-College-ID context switching",
-      "12 granular institutional RBAC roles with tailored dashboard workflows",
+      "10 granular institutional RBAC roles with tailored dashboard workflows",
       "Dual attendance engine with statutory 75% defaulters radar and faculty biometric timesheet logging",
       "Campus fast-print kiosk queue with instant cost estimation and 4-digit PIN verification",
       "Edge Computer Vision RTSP camera ingestion prototype for student zone presence detection",

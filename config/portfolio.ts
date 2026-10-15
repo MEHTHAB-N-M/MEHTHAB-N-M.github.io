@@ -20,7 +20,7 @@ export const getBasePath = (): string => {
 
 export const SITE_CONFIG = {
   name: "Mehthab N M",
-  role: "Software Engineer • Full-Stack & Python Developer",
+  role: "Full-Stack Developer • Python Developer • Software Developer",
   url: "https://mehthab-n-m.github.io/My_portfolio/",
   ogImage: "/og-image.png",
   canonicalUrl: "https://mehthab-n-m.github.io/My_portfolio/",

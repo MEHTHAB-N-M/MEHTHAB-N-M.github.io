@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Mail,
@@ -11,15 +11,14 @@ import {
   Sparkles,
   MessageSquare,
   ArrowUpRight,
-  Phone,
   ExternalLink,
 } from "lucide-react";
-import { LinkedinIcon, GithubIcon, WhatsAppIcon } from "@/components/SocialIcons";
+import { LinkedinIcon, GithubIcon } from "@/components/SocialIcons";
 import { CONTACT_INFO } from "@/config/portfolio";
 
 export default function ContactSection() {
   const [copiedEmail, setCopiedEmail] = useState(false);
-  const [copiedPhone, setCopiedPhone] = useState(false);
+  const [copiedLinkedIn, setCopiedLinkedIn] = useState(false);
   const [copiedMessage, setCopiedMessage] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -43,10 +42,10 @@ export default function ContactSection() {
     setTimeout(() => setCopiedEmail(false), 2500);
   };
 
-  const handleCopyPhone = () => {
-    navigator.clipboard.writeText(CONTACT_INFO.phone);
-    setCopiedPhone(true);
-    setTimeout(() => setCopiedPhone(false), 2500);
+  const handleCopyLinkedIn = () => {
+    navigator.clipboard.writeText(CONTACT_INFO.linkedinUrl);
+    setCopiedLinkedIn(true);
+    setTimeout(() => setCopiedLinkedIn(false), 2500);
   };
 
   const validate = () => {
@@ -86,15 +85,6 @@ ${formData.message}
     return `mailto:${CONTACT_INFO.email}?subject=${encodeURIComponent(
       subjectLine
     )}&body=${encodeURIComponent(bodyContent)}`;
-  };
-
-  const buildWhatsAppUrl = () => {
-    const text = `Hi Mehthab, I saw your portfolio.
-Name: ${formData.name || "Recruiter / Hiring Manager"}
-Subject: ${formData.subject || "Opportunity"}
-Message: ${formData.message || "I would like to discuss an opportunity."}`;
-
-    return `https://wa.me/${CONTACT_INFO.phoneRaw}?text=${encodeURIComponent(text)}`;
   };
 
   const handleCopyFullMessage = () => {
@@ -143,7 +133,7 @@ Message: ${formData.message || "I would like to discuss an opportunity."}`;
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight"
           >
-            Let&apos;s Build Something <span className="text-gradient-indigo">Exceptional</span>
+            Let&apos;s Connect &amp; <span className="text-gradient-indigo">Collaborate</span>
           </motion.h2>
 
           <motion.p
@@ -153,7 +143,7 @@ Message: ${formData.message || "I would like to discuss an opportunity."}`;
             transition={{ delay: 0.2 }}
             className="text-zinc-400 text-base sm:text-lg leading-relaxed"
           >
-            Currently open to full-time Software Engineer, Python Developer, and Full-Stack roles. Let&apos;s connect to discuss engineering opportunities, team fit, and technical challenges.
+            Currently open to full-time Full-Stack Developer, Python Developer, and Software Developer roles. Let&apos;s connect to discuss engineering opportunities, team fit, and technical challenges.
           </motion.p>
         </div>
 
@@ -207,55 +197,47 @@ Message: ${formData.message || "I would like to discuss an opportunity."}`;
               </div>
             </div>
 
-            {/* Direct Phone / WhatsApp Card */}
+            {/* Direct LinkedIn Card */}
             <div className="group relative rounded-3xl glass-card p-5 sm:p-6 border border-white/10 glass-card-hover overflow-hidden">
               <div className="flex items-center justify-between mb-3">
-                <div className="p-2.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
-                  <Phone className="w-5 h-5" />
+                <div className="p-2.5 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400">
+                  <LinkedinIcon className="w-5 h-5 fill-cyan-400" />
                 </div>
-                <span className="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
-                  Call / WhatsApp
+                <span className="text-xs font-semibold text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded-full border border-cyan-500/20">
+                  Professional Network
                 </span>
               </div>
 
-              <h3 className="text-white font-bold text-base mb-0.5">Direct Phone &amp; WhatsApp</h3>
-              <p className="text-zinc-400 text-xs mb-3">Available for interview calls</p>
+              <h3 className="text-white font-bold text-base mb-0.5">LinkedIn Profile</h3>
+              <p className="text-zinc-400 text-xs mb-3">Connect for roles &amp; technical discussions</p>
 
-              <div className="flex items-center justify-between gap-2 p-2.5 rounded-2xl bg-white/5 border border-white/10 group-hover:border-emerald-500/40 transition-colors">
+              <div className="flex items-center justify-between gap-2 p-2.5 rounded-2xl bg-white/5 border border-white/10 group-hover:border-cyan-500/40 transition-colors">
                 <a
-                  href={`tel:${CONTACT_INFO.phoneRaw}`}
-                  className="text-zinc-200 hover:text-white font-mono text-xs sm:text-sm font-semibold truncate"
+                  href={CONTACT_INFO.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-200 hover:text-white font-mono text-xs sm:text-sm font-semibold truncate flex items-center gap-1.5"
                 >
-                  {CONTACT_INFO.phone}
+                  <span>linkedin.com/in/mehthab-n-m</span>
+                  <ExternalLink className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
                 </a>
-                <div className="flex items-center gap-1.5 shrink-0">
-                  <button
-                    type="button"
-                    onClick={handleCopyPhone}
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow-md shadow-emerald-600/20 transition-all active:scale-95"
-                  >
-                    {copiedPhone ? (
-                      <>
-                        <Check className="w-3.5 h-3.5 text-emerald-300" />
-                        <span>Copied!</span>
-                      </>
-                    ) : (
-                      <>
-                        <Copy className="w-3.5 h-3.5" />
-                        <span>Copy</span>
-                      </>
-                    )}
-                  </button>
-                  <a
-                    href={CONTACT_INFO.whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-1.5 rounded-xl bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white transition-colors"
-                    title="Chat on WhatsApp"
-                  >
-                    <WhatsAppIcon className="w-4 h-4" />
-                  </a>
-                </div>
+                <button
+                  type="button"
+                  onClick={handleCopyLinkedIn}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold shadow-md shadow-cyan-600/20 transition-all shrink-0 active:scale-95"
+                >
+                  {copiedLinkedIn ? (
+                    <>
+                      <Check className="w-3.5 h-3.5 text-emerald-300" />
+                      <span>Copied!</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-3.5 h-3.5" />
+                      <span>Copy</span>
+                    </>
+                  )}
+                </button>
               </div>
             </div>
 
@@ -342,13 +324,13 @@ Message: ${formData.message || "I would like to discuss an opportunity."}`;
                     </a>
 
                     <a
-                      href={buildWhatsAppUrl()}
+                      href={CONTACT_INFO.linkedinUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition-all shadow-md"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold transition-all shadow-md"
                     >
-                      <WhatsAppIcon className="w-4 h-4" />
-                      <span>Send via WhatsApp</span>
+                      <LinkedinIcon className="w-4 h-4 fill-white" />
+                      <span>Connect on LinkedIn</span>
                     </a>
 
                     <button

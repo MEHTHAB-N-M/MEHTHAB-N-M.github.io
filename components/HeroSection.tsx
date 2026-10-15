@@ -8,7 +8,6 @@ import {
   ArrowRight,
   MapPin,
   Mail,
-  Phone,
   Award,
   Terminal,
   Users,
@@ -106,7 +105,7 @@ export default function HeroSection() {
           {/* Left Column: Text & Hero Content */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
-            {/* Status Badge & Location & Phone */}
+            {/* Status Badge & Location */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -125,14 +124,6 @@ export default function HeroSection() {
                 <MapPin className="w-3.5 h-3.5 text-cyan-400" />
                 <span>Kochi, Kerala, India</span>
               </div>
-
-              <a
-                href={`tel:${CONTACT_INFO.phoneRaw}`}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 hover:border-indigo-500/40 text-zinc-300 hover:text-white text-xs font-medium backdrop-blur-md transition-colors"
-              >
-                <Phone className="w-3.5 h-3.5 text-indigo-400" />
-                <span>{CONTACT_INFO.phone}</span>
-              </a>
             </motion.div>
 
             {/* Headline */}
@@ -163,8 +154,7 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-base sm:text-lg text-zinc-300 max-w-2xl leading-relaxed font-normal"
             >
-              Versatile Software Engineer with hands-on experience building scalable{" "}
-              <span className="text-white font-semibold">Full-Stack applications</span>, robust{" "}
+              Versatile <span className="text-white font-semibold">Full-Stack Developer</span> with hands-on experience building scalable applications, robust{" "}
               <span className="text-white font-semibold">Python backends</span>, and{" "}
               <span className="text-white font-semibold">Data & AI systems</span>. Skilled in designing clean APIs, optimizing database architectures, deriving actionable insights from complex datasets, and leading engineering teams from design through production deployment.
             </motion.p>

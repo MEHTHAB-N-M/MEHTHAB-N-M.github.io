@@ -30,19 +30,47 @@ interface TimelineItem {
 const timelineData: TimelineItem[] = [
   {
     id: "camerin-training",
-    role: "Python Full-Stack Development Training (Django + React + AI)",
-    organization: "Camerin – Indian Institute of Upskill",
-    period: "May 2026 – Nov 2026",
+    role: "Python Full-Stack Training (Django, React, AI)",
+    organization: "Camerin",
+    period: "May to Nov 2026",
     location: "In Progress",
     type: "work",
-    awardBadge: "🤖 Advanced Full-Stack & AI",
-    scorePill: "In Progress",
+    awardBadge: "🤖 Full-Stack & AI",
+    scorePill: "May – Nov 2026",
     bullets: [
-      "Undergoing intensive, hands-on professional training in Python full-stack development, building scalable web applications with Django 5, PostgreSQL, React, and applied AI under trainer Liyat Ps.",
-      "Engineered RaktaGrid (Emergency Blood Dispatch Framework), eliminating double-booking via PostgreSQL row-level locks (select_for_update), 2-hour reservation locks, and Haversine geospatial failover routing.",
-      "Developing scalable REST APIs, relational database schemas, and integrating generative AI features and automated workflows into web architectures.",
+      "Built RaktaGrid, an emergency blood dispatch system that prevents double allocation using PostgreSQL row-level locks and 2-hour reservation locks.",
+      "Implemented Haversine-based geospatial failover routing.",
+      "Developing REST APIs and relational schemas, and integrating generative AI features.",
     ],
-    skills: ["Python", "Django 5", "PostgreSQL", "Concurrency Locks", "React.js", "AI Integration", "REST APIs", "Render"],
+    skills: ["Python", "Django", "React", "PostgreSQL", "Concurrency Locks", "REST APIs", "Geospatial Routing", "Generative AI"],
+  },
+  {
+    id: "logix-space",
+    role: "Full Stack Trainee Developer",
+    organization: "Logix Space Technologies (LinkUrCodes)",
+    period: "Aug 2024 to Mar 2026 (alongside BCA)",
+    location: "Kochi, India",
+    type: "work",
+    awardBadge: "🏆 Best Performer Award",
+    bullets: [
+      "Built front-end and cross-platform apps with React.js, Flutter, Bootstrap, HTML, and CSS in an agile team.",
+      "Worked with mentors and peers to design, test, and deploy features.",
+      "Received the Best Performer Award for consistent technical growth and reliability.",
+    ],
+    skills: ["React.js", "Flutter", "Bootstrap", "HTML5", "CSS3", "JavaScript", "Agile Teamwork", "Cross-Platform"],
+  },
+  {
+    id: "hackathon-leadership",
+    role: "Team Lead",
+    organization: "Hackathon and Academic ML Projects",
+    period: "Project Leadership",
+    type: "leadership",
+    awardBadge: "🚀 Project Leadership",
+    bullets: [
+      "Led a 7-member team building a role-based task management platform (authentication, automated workflows), owning UI/UX and backend integration.",
+      "Led a 4-member team building a credit card fraud detection system, managing testing, code review, and delivery.",
+    ],
+    skills: ["Team Leadership", "Cross-Functional Collaboration", "Code Reviews & Testing", "System Architecture", "Agile Delivery"],
   },
   {
     id: "oceanvoyage-hackathon",
@@ -55,39 +83,10 @@ const timelineData: TimelineItem[] = [
     scorePill: "24h Hackathon",
     bullets: [
       "Architected the PostgreSQL relational database schema and developed NestJS backend APIs for OceanVoyage under 24-hour national hackathon constraints.",
-      "Engineered the real-time activity conflict detection engine to eliminate overlapping passenger bookings across onshore excursions and onboard events.",
-      "Collaborated in a 3-member squad with Aswin Suresh (Security) and Durga Sunil (Frontend) to deliver an end-to-end maritime booking platform.",
+      "Engineered the real-time activity conflict detection engine to prevent overlapping passenger bookings across onshore excursions and onboard events.",
+      "Collaborated in a 3-member team with Aswin Suresh (Security) and Durga Sunil (Frontend) to deliver the maritime booking platform.",
     ],
-    skills: ["NestJS", "PostgreSQL", "Database Architecture", "Backend Engineering", "Conflict Detection Algorithm", "REST APIs", "Team Collaboration"],
-  },
-  {
-    id: "logix-space",
-    role: "Full Stack Trainee Developer",
-    organization: "Logix Space Technologies Pvt. Ltd. (LinkUrCodes)",
-    period: "Aug 2024 – Mar 2026",
-    location: "Kochi, India",
-    type: "work",
-    awardBadge: "🏆 Best Performer Award",
-    bullets: [
-      "Built and maintained front-end and cross-platform applications end-to-end using React.js, Flutter, Bootstrap, HTML, and CSS in an agile, campus-based engineering team.",
-      "Collaborated with cross-functional peers and industry mentors to design, test, and deploy production-style features, balancing delivery speed with code quality.",
-      "Recognized with the Best Performer Award for consistent technical growth, reliability, and active learning.",
-    ],
-    skills: ["React.js", "Flutter", "Bootstrap", "HTML5", "CSS3", "JavaScript", "Agile Engineering", "Cross-Platform"],
-  },
-  {
-    id: "hackathon-leadership",
-    role: "Engineering Team Lead (7 & 4 Member Teams)",
-    organization: "Hackathon & Academic ML Projects",
-    period: "Project Leadership",
-    type: "leadership",
-    awardBadge: "🚀 2 Teams Led to Delivery",
-    bullets: [
-      "Led two cross-functional teams (7 and 4 members) from design through final delivery on hackathon and academic ML projects.",
-      "Spearheaded a 7-member team to design, build, and deploy a role-based task management platform with authentication and automated task workflows, owning UI/UX and backend integration.",
-      "Directed a 4-member machine learning team to build a credit card fraud detection system, managing testing, code review, and final delivery.",
-    ],
-    skills: ["Team Leadership", "Cross-Functional Team Management", "Code Reviews", "System Design", "Agile Planning"],
+    skills: ["NestJS", "PostgreSQL", "Database Architecture", "Backend Engineering", "Conflict Detection Algorithm", "REST APIs"],
   },
   {
     id: "ncc-corporal",
@@ -98,8 +97,8 @@ const timelineData: TimelineItem[] = [
     awardBadge: "🎖️ NCC 'A' & 'B' Certificates",
     bullets: [
       "Attained CPL Rank (Corporal) in the National Cadet Corps (NCC) across 6 years of disciplined service (2019–2025).",
-      "Awarded official NCC ‘A’ and ‘B’ certificates for exemplary leadership, squad command, and steadfast operational discipline.",
-      "Demonstrated high stress tolerance, transparent team communication, and unwavering dedication in rigorous squad drills and camp exercises.",
+      "Awarded official NCC ‘A’ and ‘B’ certificates for leadership, squad command, and operational discipline.",
+      "Demonstrated high stress tolerance, transparent team communication, and disciplined execution in squad drills and camp exercises.",
     ],
     skills: ["Leadership", "Discipline", "Team Management", "Crisis Coordination", "High Stress Tolerance"],
   },
@@ -142,7 +141,7 @@ export default function ExperienceSection() {
             transition={{ delay: 0.2 }}
             className="text-zinc-400 text-base sm:text-lg leading-relaxed"
           >
-            Proven history of delivering software products, leading engineering squads, achieving academic distinction, and demonstrating exceptional discipline and leadership.
+            Proven history of delivering software products, leading engineering squads, achieving academic distinction, and demonstrating disciplined leadership.
           </motion.p>
         </div>
 
