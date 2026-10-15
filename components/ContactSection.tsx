@@ -411,7 +411,7 @@ Message: ${formData.message || "I would like to discuss a project."}`;
                     <div>
                       <h3 className="text-white font-bold text-xl">Send an Inquiry</h3>
                       <p className="text-zinc-400 text-xs">
-                        Looking for full-time roles or freelance client projects
+                        Available for full-time engineering roles &amp; technical inquiries
                       </p>
                     </div>
                     <MessageSquare className="w-5 h-5 text-indigo-400" />

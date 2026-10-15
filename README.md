@@ -1,6 +1,6 @@
 # 🌐 Mehthab N M: Developer Portfolio
 
-> My personal portfolio showcasing projects, skills, experience, and freelance services.
+> My personal portfolio showcasing flagship projects, engineering skills, professional experience, and technical leadership.
 
 🔗 **Live Deployment:** [mehthab-n-m.github.io/My_portfolio](https://mehthab-n-m.github.io/My_portfolio/)
 
@@ -31,9 +31,9 @@
 |:---:|:---:|
 | <img src="public/screenshots/projects.png" alt="Featured Projects" width="100%" /> | <img src="public/screenshots/skills.png" alt="Skills Matrix" width="100%" /> |
 
-| 💼 Freelance Services & Offerings | 📬 Interactive Contact Section |
+| 💼 Professional Experience & Education | 📬 Interactive Contact Section |
 |:---:|:---:|
-| <img src="public/screenshots/services.png" alt="Services Packages" width="100%" /> | <img src="public/screenshots/contact.png" alt="Contact Form" width="100%" /> |
+| <img src="public/screenshots/services.png" alt="Experience and Journey" width="100%" /> | <img src="public/screenshots/contact.png" alt="Contact Form" width="100%" /> |
 
 ---
 
@@ -54,7 +54,6 @@
 
 - **About:** Introduction, background, and core engineering philosophy.
 - **Skills:** Filterable tech stack across programming languages, web frameworks, databases, and development tools.
-- **Services:** Freelance client offerings (websites, full-stack web applications, cloud deployment, and data dashboards).
 - **Projects:** Flagship production builds, systems architectures, live demos, and open-source repositories.
 - **Experience & Education:** Full-stack development training, team leadership, and academic degree milestones.
 - **Certifications:** Data science credentials, HackerRank certifications, and Google Developer badges.

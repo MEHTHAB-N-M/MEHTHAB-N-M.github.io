@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mehthab-n-m.github.io/My_portfolio/"),
   title: "Mehthab N M | Software Engineer • Full-Stack & Python Developer",
   description:
-    "Versatile Software Engineer and Full-Stack Developer with hands-on experience building scalable web applications, robust Python backends, freelance client solutions, and data & AI systems.",
+    "Versatile Software Engineer and Full-Stack Developer with hands-on experience building scalable web applications, robust Python backends, production-grade cloud architectures, and data & AI systems.",
   keywords: [
     "Mehthab N M",
     "Software Engineer",
     "Full-Stack Developer",
     "Python Developer",
-    "Freelance Web Developer",
+    "Frontend Developer",
     "Data Analyst",
     "AI & ML Engineer",
     "React.js",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mehthab N M | Software Engineer • Full-Stack & Python Developer",
     description:
-      "Full-stack web applications, robust Python backends, freelance client solutions, and applied AI systems.",
+      "Full-stack web applications, robust Python backends, production cloud architectures, and applied AI systems.",
     url: "https://mehthab-n-m.github.io/My_portfolio/",
     siteName: "Mehthab N M Portfolio",
     locale: "en_US",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         url: "https://mehthab-n-m.github.io/My_portfolio/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Mehthab N M | Software Engineer & Freelance Developer",
+        alt: "Mehthab N M | Software Engineer & Full-Stack Developer",
       },
     ],
   },
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mehthab N M | Software Engineer • Full-Stack & Python Developer",
     description:
-      "Full-stack web applications, robust Python backends, freelance client solutions, and applied AI systems.",
+      "Full-stack web applications, robust Python backends, production cloud architectures, and applied AI systems.",
     images: ["https://mehthab-n-m.github.io/My_portfolio/og-image.png"],
   },
 };

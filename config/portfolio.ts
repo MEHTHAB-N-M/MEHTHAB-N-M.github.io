@@ -28,7 +28,7 @@ export const SITE_CONFIG = {
 
 /**
  * CONTACT & EXTERNAL LINKS
- * Update your direct details and freelancing platform profiles here.
+ * Update your direct contact details and professional platform profiles here.
  */
 export const CONTACT_INFO = {
   email: "mehthabnm7@gmail.com",
