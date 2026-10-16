@@ -8,9 +8,8 @@ export interface ProjectItem {
   id: string; // Project slug matching gallery.json
   title: string;
   category: string;
-  statusBadge: ProjectStatusType;
+  statusBadge?: ProjectStatusType;
   badgeLabel?: string;
-  isFlagship?: boolean;
   period?: string;
   roleOrTeam?: string;
   teamMembers?: string;
@@ -52,7 +51,6 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
     category: "Healthcare Logistics & Concurrency Engine",
     statusBadge: "live",
     badgeLabel: "Live",
-    isFlagship: true,
     period: "Completed • Production Live on Render",
     roleOrTeam: "Lead Backend & Full-Stack Architect",
     contextNote: "Camerin Institute • Mentored by Liyat Ps",
@@ -90,10 +88,7 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
     id: "zynkarashift",
     title: "ZynkaraShift – Self-Hosted PaaS",
     category: "Self-Hosted Platform-as-a-Service",
-    statusBadge: "live",
-    badgeLabel: "Live",
-    isFlagship: true,
-    period: "Completed Flagship Build",
+    period: "Completed Build",
     roleOrTeam: "Lead Architect & Developer",
     description:
       "Zero-cost self-hosted Platform-as-a-Service that deploys web applications directly from GitHub repositories or Docker images, featuring an AI deployment copilot, custom multi-tenancy routing, and container orchestration.",
@@ -124,7 +119,6 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
     category: "Enterprise Full-Stack Platform",
     statusBadge: "live",
     badgeLabel: "Live",
-    isFlagship: true,
     period: "Completed • Production Verified",
     roleOrTeam: "Lead Full-Stack & ML Architect",
     hackathonNote: "Solo build • Evolved from a 24-hour hackathon project",
@@ -203,7 +197,6 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
     category: "Multi-Tenant Enterprise SaaS",
     statusBadge: "in-development",
     badgeLabel: "In development",
-    isFlagship: true,
     period: "Ongoing • In Active Development",
     roleOrTeam: "Lead System Architect & Full-Stack Developer",
     description:

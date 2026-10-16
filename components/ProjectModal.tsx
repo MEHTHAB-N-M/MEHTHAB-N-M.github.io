@@ -124,7 +124,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   if (!project) return null;
 
   // Status Badge Helper
-  const renderStatusBadge = (status: ProjectStatusType, label?: string) => {
+  const renderStatusBadge = (status?: ProjectStatusType, label?: string) => {
     switch (status) {
       case "live":
         return (
@@ -340,11 +340,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     {project.category}
                   </span>
                   {renderStatusBadge(project.statusBadge, project.badgeLabel)}
-                  {project.isFlagship && (
-                    <span className="px-3 py-1 rounded-full bg-gradient-to-r from-amber-500/20 to-indigo-500/20 border border-amber-500/40 text-amber-300 text-xs font-bold uppercase tracking-wider">
-                      🌟 FLAGSHIP
-                    </span>
-                  )}
                 </div>
 
                 {/* Primary Action Buttons (Live Demo + GitHub) */}

@@ -1,6 +1,6 @@
 # 🌐 Mehthab N M: Developer Portfolio
 
-> My personal portfolio showcasing flagship projects, engineering skills, professional experience, and technical leadership.
+> My personal portfolio showcasing featured projects, engineering skills, professional experience, and technical leadership.
 
 🔗 **Live Deployment:** [mehthab-n-m.github.io/My_portfolio](https://mehthab-n-m.github.io/My_portfolio/)
 
@@ -54,7 +54,7 @@
 
 - **About:** Introduction, background, and core engineering philosophy.
 - **Skills:** Filterable tech stack across programming languages, web frameworks, databases, and development tools.
-- **Projects:** Flagship production builds, systems architectures, live demos, and open-source repositories.
+- **Projects:** Featured production builds, systems architectures, live demos, and open-source repositories.
 - **Experience & Education:** Full-stack development training, team leadership, and academic degree milestones.
 - **Certifications:** Data science credentials, HackerRank certifications, and Google Developer badges.
 - **Contact:** Interactive contact and inquiry form with direct email and WhatsApp communication channels.
@@ -86,7 +86,7 @@ My_portfolio/
 │   ├── Navbar.tsx              # Dynamic blur navigation & mobile drawer
 │   ├── HeroSection.tsx         # Headline, bio stats & CTA actions
 │   ├── SkillsSection.tsx       # Searchable & filterable skill badges
-│   ├── ProjectsSection.tsx     # Flagship systems cards & repo links
+│   ├── ProjectsSection.tsx     # Featured systems cards & repo links
 │   ├── ProjectModal.tsx        # In-depth architectural case studies modal
 │   ├── ExperienceSection.tsx   # Professional training & team leadership
 │   ├── EducationSection.tsx    # Academic degrees (MCA & BCA milestones)

@@ -152,9 +152,7 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-base sm:text-lg text-zinc-300 max-w-2xl leading-relaxed font-normal"
             >
-              Versatile <span className="text-white font-semibold">Full-Stack Developer</span> with hands-on experience building scalable applications, robust{" "}
-              <span className="text-white font-semibold">Python backends</span>, and{" "}
-              <span className="text-white font-semibold">Data & AI systems</span>. Skilled in designing clean APIs, optimizing database architectures, deriving actionable insights from complex datasets, and leading engineering teams from design through production deployment.
+              BCA graduate with <span className="text-white font-semibold">1 year 7 months</span> of hands-on experience as a <span className="text-white font-semibold">Full Stack Trainee</span> at LinkUrCodes, where I earned the <span className="text-white font-semibold">Best Performer Award</span>. Currently pursuing an <span className="text-white font-semibold">MCA at IGNOU</span> and advanced Python full-stack training (Django, React, AI) at Camerin. I build products by combining proven ideas into new workflows, such as <span className="text-white font-semibold">RaktaGrid</span>, a deployed emergency blood dispatch system with row-level locking tested against double-booking. I also built <span className="text-white font-semibold">ZynkaraShift</span>, a self-hosted deployment platform with Docker and AI-assisted deploys.
             </motion.p>
 
             {/* Action Buttons & Socials */}
