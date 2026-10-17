@@ -29,9 +29,9 @@ export interface ProjectItem {
  * Edit these arrays to easily reorder projects on the main grid!
  */
 export const FEATURED_PROJECT_IDS: string[] = [
+  "zynkarashift",
   "raktagrid",
   "quicktask",
-  "zynkarashift",
   "noorjahan",
   "credsecure",
   "oceanvoyage",
@@ -88,7 +88,9 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
     id: "zynkarashift",
     title: "ZynkaraShift – Self-Hosted PaaS",
     category: "Self-Hosted Platform-as-a-Service",
-    period: "Completed Build",
+    statusBadge: "live",
+    badgeLabel: "Live",
+    period: "Completed Build • Production Live",
     roleOrTeam: "Lead Architect & Developer",
     description:
       "Zero-cost self-hosted Platform-as-a-Service that deploys web applications directly from GitHub repositories or Docker images, featuring an AI deployment copilot, custom multi-tenancy routing, and container orchestration.",
@@ -111,6 +113,7 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
       "Stripe (simulated checkout)",
     ],
     githubUrl: "https://github.com/MEHTHAB-N-M/Zynkara_Shift",
+    liveUrl: "http://zynkarashift.me/",
   },
 
   quicktask: {
