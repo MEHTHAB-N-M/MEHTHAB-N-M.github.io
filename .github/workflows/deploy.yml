@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - main
   workflow_dispatch:
 
 permissions:
@@ -32,6 +33,7 @@ jobs:
           cache: "npm"
 
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
 
       - name: Install Dependencies
@@ -40,7 +42,7 @@ jobs:
       - name: Build and Export Static Site
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /My_portfolio
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3

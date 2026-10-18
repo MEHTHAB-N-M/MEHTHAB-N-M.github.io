@@ -5,10 +5,10 @@
  * and testimonials all in one place.
  */
 
-// Helper to determine the Next.js basePath (handles GitHub Pages subfolder deployment)
+// Helper to determine the Next.js basePath (handles GitHub Pages subfolder deployment & root domain)
 export const getBasePath = (): string => {
   if (typeof process !== "undefined") {
-    if (process.env.NEXT_PUBLIC_BASE_PATH) {
+    if (typeof process.env.NEXT_PUBLIC_BASE_PATH === "string") {
       return process.env.NEXT_PUBLIC_BASE_PATH;
     }
     if (process.env.NODE_ENV === "production") {
