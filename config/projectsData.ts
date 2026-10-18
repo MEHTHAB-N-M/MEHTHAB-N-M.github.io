@@ -164,7 +164,7 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
       "Docker",
     ],
     githubUrl: "https://github.com/MEHTHAB-N-M/QUICK_TASK",
-    liveUrl: "https://mehthab7.github.io/QUICK_TASK/",
+    liveUrl: "https://mehthab-n-m.github.io/QUICK_TASK/login",
   },
 
   oceanvoyage: {
