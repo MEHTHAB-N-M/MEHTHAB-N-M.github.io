@@ -51,7 +51,7 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
     category: "Healthcare Logistics & Concurrency Engine",
     statusBadge: "live",
     badgeLabel: "Live",
-    period: "Completed • Production Live on Render",
+    period: "Completed • Production Live on Vercel",
     roleOrTeam: "Lead Backend & Full-Stack Architect",
     contextNote: "Camerin Institute • Mentored by Liyat Ps",
     description:
@@ -78,10 +78,10 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
       "HMAC-SHA256",
       "Gunicorn",
       "WhiteNoise",
-      "Render",
+      "Vercel",
     ],
     githubUrl: "https://github.com/MEHTHAB-N-M/RaktaGrid",
-    liveUrl: "https://raktagrid.onrender.com/",
+    liveUrl: "https://rakta-grid-five.vercel.app/",
   },
 
   zynkarashift: {
