@@ -391,7 +391,7 @@ export const PROJECTS_DICTIONARY: Record<string, ProjectItem> = {
       "Render",
     ],
     githubUrl: "https://github.com/MEHTHAB-N-M/wedding_company",
-    liveUrl: "https://wedding-company-2-49p1.onrender.com/",
+    liveUrl: "https://mehthab07-wedding-company.static.hf.space",
   },
 
   "tictactoe-mobile": {
